@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-image: url(./img/wall.png);
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+    font-family: "Edu TAS Beginner", cursive;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+
+main {
+    background-image: url(./img/cork.png);
+    height: 60rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.polaroid {
+    background-color: white;
+    border: 10px solid #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: 320px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease;
+    height: fit-content;
+}
+
+.polaroid:hover {
+    transform: translateY(-10px);
+}
+
+.polaroid img {
+    width: 100%;
+    height: auto;
+}
+
+.caption {
+    display: block;
+    color: black;
+    padding: 10px;
+    font-size: 1rem;
+    font-family: "Sometype Mono", monospace;
+}

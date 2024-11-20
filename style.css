@@ -46,6 +46,7 @@ main {
 .polaroid img {
     width: 100%;
     height: auto;
+    cursor: pointer;
 }
 
 .caption {
@@ -54,4 +55,37 @@ main {
     padding: 10px;
     font-size: 1rem;
     font-family: "Sometype Mono", monospace;
+}
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+
+.polaroid-over img {
+    max-width: 90%;
+    max-height: 80%;
+}
+
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #fff;
+    border: none;
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1001;
 }
